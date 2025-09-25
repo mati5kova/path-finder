@@ -1,4 +1,5 @@
-import { memo, useEffect, useRef } from "react";
+//dev useEffect, useRef
+import { memo } from "react";
 
 function Tile({
 	x,
@@ -17,11 +18,12 @@ function Tile({
 	toggleCell: (x: number, y: number) => void;
 	isDestination: boolean;
 }) {
-	const renderCount = useRef(0);
-	renderCount.current += 1;
-	useEffect(() => {
-		console.log(`Tile (${x}, ${y}) rendered ${renderCount.current} times`);
-	});
+	// dev
+	// const renderCount = useRef(0);
+	// renderCount.current += 1;
+	// useEffect(() => {
+	// 	console.log(`Tile (${x}, ${y}) rendered ${renderCount.current} times`);
+	// });
 	return (
 		<div
 			className={`flex items-center justify-center text-xs cursor-pointer select-none ${

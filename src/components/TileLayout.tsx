@@ -151,19 +151,6 @@ function TileLayout({
 
 		// ko zacnemo novo simulacijo ocistimo polje stare
 		setPathSet(new Set());
-		console.log(
-			"cols, rows",
-			numOfColumns,
-			numOfRows,
-			"start",
-			startPositionOfExplorer,
-			"goal",
-			targetDestination,
-			"startBlocked",
-			isBlocked(startPositionOfExplorer, blocked),
-			"goalBlocked",
-			isBlocked(targetDestination, blocked)
-		);
 
 		// sanity checks
 		if (
@@ -356,7 +343,7 @@ function TileLayout({
 							}
 						}
 					}
-
+					/*
 					const exportedGrid = {
 						batch,
 						tileSize,
@@ -365,7 +352,8 @@ function TileLayout({
 						blockedX: Array.from(blockedX),
 						blockedY: Array.from(blockedY),
 					};
-					console.log(exportedGrid);
+					dev console.log(exportedGrid);
+                    */
 				}}
 			>
 				export grid settings
